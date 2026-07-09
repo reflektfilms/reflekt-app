@@ -1,0 +1,24 @@
+name: Supabase Keep-Alive
+ 
+# Pings the database every day so the free-tier project never pauses
+# (Supabase pauses free projects after ~7 days without database activity)
+on:
+  schedule:
+    - cron: '0 13 * * *'   # every day at 13:00 UTC (~8-9am Montréal)
+  workflow_dispatch:        # allows manual run from the Actions tab
+ 
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase quotes table
+        run: |
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://lumeugkmwlqnseoiblkm.supabase.co/rest/v1/quotes?select=id&limit=1" \
+            -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx1bWV1Z2ttd2xxbnNlb2libGttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY4NjE4NTksImV4cCI6MjA5MjQzNzg1OX0.fjueCkgYIVbfwv7qB_-GsKWNsQcqNzwnTYslUrGiyks")
+          echo "Supabase responded with HTTP $RESPONSE"
+          if [ "$RESPONSE" -ne 200 ]; then
+            echo "::warning::Supabase ping returned $RESPONSE — project may be paused. Visit the Supabase dashboard to restore it."
+            exit 1
+          fi
+ 
