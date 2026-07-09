@@ -463,28 +463,28 @@ h1{font-size:22px;font-weight:500;margin-bottom:4px;color:#2A2118}
 // FILM DATABASE
 // ═══════════════════════════════════════════════════════════════
 const filmDB=[
-  {n:"CLEAR 1 UVC",cat:"uv",app:"int",c:2.15},
-  {n:"GREY / GRIS 30 UVC",cat:"uv",app:"int",c:2.08},
-  {n:"NEUTRAL 40 UVC",cat:"uv",app:"int",c:2.96},
-  {n:"TOTAL UV 400",cat:"uv",app:"int",c:5.77},
-  {n:"AMBER C",cat:"decorative",app:"int",c:7.49},
+  {n:"CLEAR 1 UVC",cat:"uv",app:"int",c:2.15,vlt:89,tser:10,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"GREY / GRIS 30 UVC",cat:"uv",app:"int",c:2.08,vlt:30,tser:55,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"NEUTRAL 40 UVC",cat:"uv",app:"int",c:2.96,vlt:60,tser:30,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"TOTAL UV 400",cat:"uv",app:"int",c:5.77,vlt:70,tser:20,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"AMBER C",cat:"decorative",app:"int",c:7.49,vlt:50,tser:25,uvr:99,privacy:false,glare:false,heat:false},
   {n:"AURORA SUMMER",cat:"decorative",app:"int",c:5.95},
   {n:"AURORA WINTER",cat:"decorative",app:"int",c:5.95},
-  {n:"AZUR 80 XC",cat:"solar",app:"ext",c:3.35},
+  {n:"AZUR 80 XC",cat:"solar",app:"ext",c:3.35,vlt:18,tser:74,uvr:99,privacy:true,glare:true,heat:true},
   {n:"BLEU 80 C",cat:"solar",app:"int",c:1.96},
   {n:"BLUE 40 C",cat:"decorative",app:"int",c:3.5},
   {n:"BLUE AZURE C",cat:"decorative",app:"int",c:3.5},
   {n:"BLUE OCEAN C",cat:"decorative",app:"int",c:3.5},
   {n:"BRONZE 80 C",cat:"solar",app:"int",c:2.62},
-  {n:"BRONZE 80 XC",cat:"solar",app:"ext",c:3.19},
+  {n:"BRONZE 80 XC",cat:"solar",app:"ext",c:3.19,vlt:14,tser:76,uvr:99,privacy:true,glare:true,heat:true},
   {n:"CHOCOLATE C",cat:"decorative",app:"int",c:3.5},
   {n:"COPPER / CUIVRE 50 C",cat:"solar",app:"int",c:3.46},
   {n:"COPPER / CUIVRE 65 C",cat:"solar",app:"int",c:2.5},
   {n:"COPPER / CUIVRE 80 C",cat:"solar",app:"int",c:3.46},
-  {n:"COPPER / CUIVRE 80 XC",cat:"solar",app:"ext",c:4.54},
+  {n:"COPPER / CUIVRE 80 XC",cat:"solar",app:"ext",c:4.54,vlt:20,tser:78,uvr:99,privacy:true,glare:true,heat:true},
   {n:"GOLD / OR 80 C",cat:"solar",app:"int",c:2.62},
   {n:"GREEN / VERT 80 C",cat:"solar",app:"int",c:2.62},
-  {n:"GREEN / VERT 80 XC",cat:"solar",app:"ext",c:3.19},
+  {n:"GREEN / VERT 80 XC",cat:"solar",app:"ext",c:3.19,vlt:11,tser:77,uvr:99,privacy:true,glare:true,heat:true},
   {n:"LIME C / VERT LIME C",cat:"decorative",app:"int",c:3.5},
   {n:"MINT C / VERT MENTHE C",cat:"decorative",app:"int",c:3.5},
   {n:"ORANGE C",cat:"decorative",app:"int",c:3.5},
@@ -499,68 +499,68 @@ const filmDB=[
   {n:"PURPLE / VIOLET C",cat:"decorative",app:"int",c:3.5},
   {n:"RASPBERRY / FRAMBOISE C",cat:"decorative",app:"int",c:3.5},
   {n:"RED / ROUGE C",cat:"decorative",app:"int",c:3.5},
-  {n:"SKY BLACK 99 XC",cat:"solar",app:"ext",c:7.38},
+  {n:"SKY BLACK 99 XC",cat:"solar",app:"ext",c:7.38,vlt:1,tser:90,uvr:99,privacy:true,glare:true,heat:true},
   {n:"TURQUOISE C",cat:"decorative",app:"int",c:3.5},
   {n:"YELLOW / JAUNE C",cat:"decorative",app:"int",c:3.5},
   {n:"ARTIKA-X",cat:"polycarb",app:"int",c:3.42},
   {n:"MASTER 80 XC",cat:"polycarb",app:"ext",c:4.5},
   {n:"METALUX PLUS",cat:"polycarb",app:"int",c:2.92},
-  {n:"BLACK OPAQUE / NOIR",cat:"privacy",app:"int",c:3.5},
-  {n:"MAT BLUE",cat:"decorative",app:"int",c:3.0},
-  {n:"MAT BRONZE",cat:"decorative",app:"int",c:3.0},
-  {n:"MAT FROST PVC",cat:"privacy",app:"int",c:1.0},
-  {n:"MAT FROST PVC STATIC",cat:"privacy",app:"int",c:3.0},
-  {n:"MAT FROZEN PVC",cat:"privacy",app:"int",c:3.0},
-  {n:"MAT GREEN",cat:"decorative",app:"int",c:3.0},
+  {n:"BLACK OPAQUE / NOIR",cat:"privacy",app:"int",c:3.5,vlt:0,tser:85,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"MAT BLUE",cat:"decorative",app:"int",c:3},
+  {n:"MAT BRONZE",cat:"decorative",app:"int",c:3},
+  {n:"MAT FROST PVC",cat:"privacy",app:"int",c:1,vlt:50,tser:5,uvr:80,privacy:true,glare:false,heat:false},
+  {n:"MAT FROST PVC STATIC",cat:"privacy",app:"int",c:3},
+  {n:"MAT FROZEN PVC",cat:"privacy",app:"int",c:3},
+  {n:"MAT GREEN",cat:"decorative",app:"int",c:3},
   {n:"MAT GREY PET",cat:"privacy",app:"int",c:1.81},
-  {n:"MAT GREY PVC",cat:"privacy",app:"int",c:3.0},
+  {n:"MAT GREY PVC",cat:"privacy",app:"int",c:3},
   {n:"MAT LIGHT PET",cat:"privacy",app:"int",c:2.46},
-  {n:"MAT OPAL PET",cat:"privacy",app:"int",c:1.5},
-  {n:"MAT PINK",cat:"decorative",app:"int",c:3.0},
+  {n:"MAT OPAL PET",cat:"privacy",app:"int",c:1.5,vlt:55,tser:5,uvr:80,privacy:true,glare:false,heat:false},
+  {n:"MAT PINK",cat:"decorative",app:"int",c:3},
   {n:"MAT SILVER PET",cat:"privacy",app:"int",c:4.27},
   {n:"MAT SILVER PVC EXT",cat:"privacy",app:"ext",c:2.4},
-  {n:"MAT WHITE PET",cat:"privacy",app:"int",c:1.0},
+  {n:"MAT WHITE PET",cat:"privacy",app:"int",c:1,vlt:40,tser:5,uvr:80,privacy:true,glare:false,heat:false},
   {n:"MAT WHITE PVC",cat:"privacy",app:"int",c:1.75},
   {n:"MAT WHITE PVC BUBBLE FREE",cat:"privacy",app:"int",c:2.54},
   {n:"MAT YELLOW",cat:"decorative",app:"int",c:3.15},
-  {n:"WHITE OPAQUE / NACRÉ",cat:"privacy",app:"int",c:3.5},
+  {n:"WHITE OPAQUE / NACRÉ",cat:"privacy",app:"int",c:3.5,vlt:0,tser:20,uvr:99,privacy:true,glare:false,heat:false},
   {n:"ARCHITECTURAL PROTECTOR",cat:"security",app:"int",c:8.87},
-  {n:"CLEAR 12 C",cat:"security",app:"int",c:3.15},
-  {n:"CLEAR 17 C",cat:"security",app:"int",c:4.45},
-  {n:"CLEAR 4 C",cat:"security",app:"int",c:1.5},
-  {n:"CLEAR 4 XC G",cat:"security",app:"ext",c:3.0},
-  {n:"CLEAR 7 C",cat:"security",app:"int",c:2.31},
-  {n:"CLEAR 8 C",cat:"security",app:"int",c:2.96},
-  {n:"CLEAR 8 XC",cat:"security",app:"ext",c:2.85},
+  {n:"CLEAR 12 C",cat:"security",app:"int",c:3.15,vlt:82,tser:20,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"CLEAR 17 C",cat:"security",app:"int",c:4.45,vlt:80,tser:20,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"CLEAR 4 C",cat:"security",app:"int",c:1.5,vlt:88,tser:12,uvr:90,privacy:false,glare:false,heat:false},
+  {n:"CLEAR 4 XC G",cat:"security",app:"ext",c:3,vlt:88,tser:12,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"CLEAR 7 C",cat:"security",app:"int",c:2.31,vlt:85,tser:18,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"CLEAR 8 C",cat:"security",app:"int",c:2.96,vlt:83,tser:20,uvr:95,privacy:false,glare:false,heat:false},
+  {n:"CLEAR 8 XC",cat:"security",app:"ext",c:2.85,vlt:83,tser:20,uvr:99,privacy:false,glare:false,heat:false},
   {n:"CLEAR AB ANTI-FOG",cat:"specialty",app:"int",c:7.93},
-  {n:"MAT WHITE SAFETY",cat:"security",app:"int",c:3.0},
+  {n:"MAT WHITE SAFETY",cat:"security",app:"int",c:3,vlt:50,tser:10,uvr:99,privacy:true,glare:false,heat:false},
   {n:"MULTI PROTEC 4 C",cat:"security",app:"int",c:10.11},
-  {n:"NEUTRAL 440 C",cat:"security",app:"int",c:2.81},
-  {n:"NEUTRAL 465 C",cat:"security",app:"int",c:2.81},
-  {n:"PROTEC 4 C",cat:"security",app:"int",c:1.31},
-  {n:"PROTEC 6 C",cat:"security",app:"int",c:3.35},
-  {n:"SAFE 4 C",cat:"security",app:"int",c:1.12},
-  {n:"SAFE 4 XC",cat:"security",app:"ext",c:1.93},
+  {n:"NEUTRAL 440 C",cat:"security",app:"int",c:2.81,vlt:44,tser:45,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"NEUTRAL 465 C",cat:"security",app:"int",c:2.81,vlt:32,tser:55,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"PROTEC 4 C",cat:"security",app:"int",c:1.31,vlt:88,tser:12,uvr:90,privacy:false,glare:false,heat:false},
+  {n:"PROTEC 6 C",cat:"security",app:"int",c:3.35,vlt:85,tser:15,uvr:90,privacy:false,glare:false,heat:false},
+  {n:"SAFE 4 C",cat:"security",app:"int",c:1.12,vlt:87,tser:12,uvr:95,privacy:false,glare:false,heat:false},
+  {n:"SAFE 4 XC",cat:"security",app:"ext",c:1.93,vlt:87,tser:12,uvr:99,privacy:false,glare:false,heat:false},
   {n:"SECUR 4",cat:"security",app:"int",c:0.89},
-  {n:"ALU 50",cat:"solar",app:"int",c:2.0},
-  {n:"ALU 50 XC",cat:"solar",app:"ext",c:1.89},
-  {n:"ALU 70 C",cat:"solar",app:"int",c:1.6},
-  {n:"ALU 70 XC",cat:"solar",app:"ext",c:1.89},
-  {n:"ALU 80",cat:"solar",app:"int",c:2.0},
-  {n:"ALU 80 C",cat:"solar",app:"int",c:1.31},
-  {n:"ALU 80 XC",cat:"solar",app:"ext",c:1.89},
-  {n:"CHARCOAL / CENDRE 95 XC",cat:"solar",app:"ext",c:3.45},
-  {n:"CHROME 245 XC",cat:"solar",app:"ext",c:4.95},
-  {n:"CHROME 270 XC",cat:"solar",app:"ext",c:4.95},
-  {n:"CHROME 285 XC",cat:"solar",app:"ext",c:2.45},
-  {n:"CLARITY 245 XC",cat:"solar",app:"ext",c:4.95},
+  {n:"ALU 50",cat:"solar",app:"int",c:2},
+  {n:"ALU 50 XC",cat:"solar",app:"ext",c:1.89,vlt:50,tser:52,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"ALU 70 C",cat:"solar",app:"int",c:1.6,vlt:29,tser:68,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"ALU 70 XC",cat:"solar",app:"ext",c:1.89,vlt:30,tser:65,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"ALU 80",cat:"solar",app:"int",c:2},
+  {n:"ALU 80 C",cat:"solar",app:"int",c:1.31,vlt:14,tser:74,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"ALU 80 XC",cat:"solar",app:"ext",c:1.89,vlt:15,tser:78,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"CHARCOAL / CENDRE 95 XC",cat:"solar",app:"ext",c:3.45,vlt:5,tser:82,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"CHROME 245 XC",cat:"solar",app:"ext",c:4.95,vlt:24,tser:80,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"CHROME 270 XC",cat:"solar",app:"ext",c:4.95,vlt:16,tser:82,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"CHROME 285 XC",cat:"solar",app:"ext",c:2.45,vlt:10,tser:85,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"CLARITY 245 XC",cat:"solar",app:"ext",c:4.95,vlt:55,tser:55,uvr:99,privacy:false,glare:true,heat:true},
   {n:"CLARITY 333 XC",cat:"solar",app:"ext",c:13.98},
-  {n:"MULTIGLASS 66 C",cat:"solar",app:"int",c:2.85},
-  {n:"NATURAL 65 XC",cat:"solar",app:"ext",c:3.45},
-  {n:"NATURAL 80 XC",cat:"solar",app:"ext",c:3.45},
-  {n:"NICKEL 80 XC",cat:"solar",app:"ext",c:2.92},
-  {n:"SILVER / ARGENT 470 C",cat:"security",app:"int",c:3.58},
-  {n:"SILVER / ARGENT 480 C",cat:"security",app:"int",c:3.58},
+  {n:"MULTIGLASS 66 C",cat:"solar",app:"int",c:2.85,vlt:66,tser:35,uvr:99,privacy:false,glare:false,heat:true},
+  {n:"NATURAL 65 XC",cat:"solar",app:"ext",c:3.45,vlt:26,tser:65,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"NATURAL 80 XC",cat:"solar",app:"ext",c:3.45,vlt:38,tser:57,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"NICKEL 80 XC",cat:"solar",app:"ext",c:2.92,vlt:18,tser:72,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"SILVER / ARGENT 470 C",cat:"security",app:"int",c:3.58,vlt:28,tser:65,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"SILVER / ARGENT 480 C",cat:"security",app:"int",c:3.58,vlt:20,tser:72,uvr:99,privacy:true,glare:true,heat:true},
   {n:"SILVER / ARGENT 50 C",cat:"solar",app:"int",c:1.2},
   {n:"SILVER / ARGENT 70 C",cat:"solar",app:"int",c:1.7},
   {n:"SILVER / ARGENT 80 C",cat:"solar",app:"int",c:2.27},
@@ -571,27 +571,27 @@ const filmDB=[
   {n:"SILVER / PLATINE 480 XC",cat:"solar",app:"ext",c:6.5},
   {n:"SILVER / PLATINE 60 XC",cat:"solar",app:"ext",c:3.05},
   {n:"SILVER / PLATINE 80 XC",cat:"solar",app:"ext",c:1.95},
-  {n:"SILVER 345 XC",cat:"solar",app:"ext",c:4.95},
-  {n:"SILVER 370 XC",cat:"solar",app:"ext",c:4.95},
-  {n:"SILVER 385 XC",cat:"solar",app:"ext",c:4.95},
-  {n:"SPECTRA 30 C",cat:"solar",app:"int",c:3.45},
-  {n:"SPECTRA 33 C",cat:"solar",app:"int",c:5.34},
-  {n:"SPECTRA 333 XC",cat:"solar",app:"ext",c:9.43},
-  {n:"STEEL 50 C",cat:"solar",app:"int",c:2.2},
-  {n:"STEEL 65 C",cat:"solar",app:"int",c:2.2},
-  {n:"STEEL 75 C",cat:"solar",app:"int",c:2.2},
+  {n:"SILVER 345 XC",cat:"solar",app:"ext",c:4.95,vlt:20,tser:80,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"SILVER 370 XC",cat:"solar",app:"ext",c:4.95,vlt:15,tser:83,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"SILVER 385 XC",cat:"solar",app:"ext",c:4.95,vlt:10,tser:86,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"SPECTRA 30 C",cat:"solar",app:"int",c:3.45,vlt:68,tser:38,uvr:99,privacy:false,glare:false,heat:true},
+  {n:"SPECTRA 33 C",cat:"solar",app:"int",c:5.34,vlt:62,tser:44,uvr:99,privacy:false,glare:false,heat:true},
+  {n:"SPECTRA 333 XC",cat:"solar",app:"ext",c:9.43,vlt:45,tser:65,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"STEEL 50 C",cat:"solar",app:"int",c:2.2,vlt:50,tser:43,uvr:99,privacy:false,glare:false,heat:false},
+  {n:"STEEL 65 C",cat:"solar",app:"int",c:2.2,vlt:35,tser:52,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"STEEL 75 C",cat:"solar",app:"int",c:2.2,vlt:25,tser:60,uvr:99,privacy:false,glare:true,heat:true},
   {n:"TITANE 250 XC",cat:"solar",app:"ext",c:3.62},
   {n:"TITANE 275 XC",cat:"solar",app:"ext",c:5.57},
-  {n:"VISTA 80 C",cat:"solar",app:"int",c:2.92},
-  {n:"VISTA 90 C",cat:"solar",app:"int",c:2.75},
-  {n:"VISTA 90 XC",cat:"solar",app:"ext",c:3.45},
-  {n:"VISTA 99 XC",cat:"solar",app:"ext",c:3.85},
-  {n:"DATAJAMMER",cat:"specialty",app:"int",c:35.0},
+  {n:"VISTA 80 C",cat:"solar",app:"int",c:2.92,vlt:20,tser:76,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"VISTA 90 C",cat:"solar",app:"int",c:2.75,vlt:30,tser:60,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"VISTA 90 XC",cat:"solar",app:"ext",c:3.45,vlt:22,tser:75,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"VISTA 99 XC",cat:"solar",app:"ext",c:3.85,vlt:10,tser:85,uvr:99,privacy:true,glare:true,heat:true},
+  {n:"DATAJAMMER",cat:"specialty",app:"int",c:35,vlt:30,tser:50,uvr:99,privacy:true,glare:true,heat:true},
   {n:"HIGH FREQUENCY - CU 20 DB36",cat:"specialty",app:"int",c:6.65},
   {n:"HIGH FREQUENCY - NS 50 DB29",cat:"specialty",app:"int",c:5.96},
-  {n:"ECLIPSE 40-80C",cat:"thermal",app:"int",c:12.68},
-  {n:"SOLAR 50 C",cat:"thermal",app:"int",c:2.89},
-  {n:"SOLAR 80 C",cat:"thermal",app:"int",c:2.89},
+  {n:"ECLIPSE 40-80C",cat:"thermal",app:"int",c:12.68,vlt:60,tser:45,uvr:99,privacy:false,glare:false,heat:true},
+  {n:"SOLAR 50 C",cat:"thermal",app:"int",c:2.89,vlt:50,tser:55,uvr:99,privacy:false,glare:true,heat:true},
+  {n:"SOLAR 80 C",cat:"thermal",app:"int",c:2.89,vlt:75,tser:40,uvr:99,privacy:false,glare:false,heat:true},
 ];
 
 const COMPAT={
@@ -965,51 +965,58 @@ function goalEval(f){
   // Specialty/polycarb never appear in standard recommendations — user must search.
   if(f.cat==='specialty'||f.cat==='polycarb')return {score:0,eligible:false};
 
+  // Spec helpers: films with published specs get graded scores (0–1 factor),
+  // films without specs fall back to a neutral 0.6 so they rank mid-pack
+  // rather than beating or losing to everything by default.
+  const hasSpecs=f.tser!=null||f.vlt!=null;
+  const tserF=f.tser!=null?f.tser/100:0.6;            // heat: higher TSER = better
+  const glareF=f.vlt!=null?(1-f.vlt/100):0.6;          // glare: lower VLT = better
+  const uvF=f.uvr!=null?(f.uvr>=99?1:f.uvr/100):0.6;   // uv: 99%+ = full marks
+
   goals.forEach((g,i)=>{
     const w=3-i;
-    // Heat reduction — solar control films and thermal
+    // Heat reduction — graded by TSER
     if(g==='Réduction chaleur'){
-      if(f.cat==='solar'){s+=15*w;eligible=true;}
-      else if(f.cat==='thermal'){s+=10*w;eligible=true;}
+      if(f.cat==='solar'){s+=Math.round(20*tserF)*w;eligible=true;}
+      else if(f.cat==='thermal'){s+=Math.round(14*tserF)*w;eligible=true;}
     }
-    // Glare reduction — solar films primarily
+    // Glare reduction — graded by darkness (inverse VLT), gated on glare flag when known
     if(g==='Réduction éblouissement'){
-      if(f.cat==='solar'){s+=12*w;eligible=true;}
-      else if(f.cat==='privacy'){s+=8*w;eligible=true;}
+      if(f.cat==='solar'&&f.glare!==false){s+=Math.round(16*glareF)*w;eligible=true;}
+      else if(f.cat==='privacy'){s+=Math.round(10*glareF)*w;eligible=true;}
     }
-    // UV protection — dedicated UV films rank highest, solar also blocks UV well
+    // UV protection — dedicated UV films rank highest, solar also blocks UV
     if(g==='Protection UV'){
-      if(f.cat==='uv'){s+=15*w;eligible=true;}
-      else if(f.cat==='solar'){s+=8*w;eligible=true;}
-      else if(f.cat==='thermal'){s+=6*w;eligible=true;}
+      if(f.cat==='uv'){s+=Math.round(15*uvF)*w;eligible=true;}
+      else if(f.cat==='solar'){s+=Math.round(9*uvF)*w;eligible=true;}
+      else if(f.cat==='thermal'){s+=Math.round(7*uvF)*w;eligible=true;}
     }
-    // IR rejection — solar control films
+    // IR rejection — graded by TSER, needs strong heat performance
     if(g==='Rejet infra-rouge'){
-      if(f.cat==='solar'){s+=12*w;eligible=true;}
-      else if(f.cat==='thermal'){s+=8*w;eligible=true;}
+      if(f.cat==='solar'&&(f.tser==null||f.tser>50)){s+=Math.round(16*tserF)*w;eligible=true;}
+      else if(f.cat==='thermal'){s+=Math.round(10*tserF)*w;eligible=true;}
     }
-    // Privacy — privacy films and reflective solar films
+    // Privacy — privacy films first; reflective solar only if privacy-capable
     if(g==='Intimité'){
       if(f.cat==='privacy'){s+=15*w;eligible=true;}
-      else if(f.cat==='solar'){s+=10*w;eligible=true;}  // mirror/reflective solar
-      else if(f.cat==='decorative'){s+=8*w;eligible=true;}  // decoratives can provide visual privacy
+      else if(f.cat==='solar'&&f.privacy!==false){s+=(f.privacy===true?12:8)*w;eligible=true;}
+      else if(f.cat==='decorative'){s+=8*w;eligible=true;}
     }
-    // Energy costs — solar + thermal
+    // Energy costs — graded by TSER for solar, thermal always strong
     if(g==="Coûts d'énergie"){
-      if(f.cat==='solar'){s+=10*w;eligible=true;}
+      if(f.cat==='solar'&&(f.tser==null||f.tser>40)){s+=Math.round(12*tserF)*w;eligible=true;}
       else if(f.cat==='thermal'){s+=12*w;eligible=true;}
     }
     // Insulation — thermal films
     if(g==='Isolation'){
       if(f.cat==='thermal'){s+=15*w;eligible=true;}
-      else if(f.cat==='solar'){s+=4*w;eligible=true;}  // some solar films help
+      else if(f.cat==='solar'){s+=4*w;eligible=true;}
     }
-    // No mirror — non-solar films (users who want solar benefits without reflective look)
+    // No mirror — non-solar films
     if(g==='Aucun miroir'){
-      if(f.cat==='thermal'){s+=12*w;eligible=true;}  // best "invisible" thermal option
+      if(f.cat==='thermal'){s+=12*w;eligible=true;}
       else if(f.cat==='uv'){s+=10*w;eligible=true;}
       else if(f.cat==='privacy'){s+=8*w;eligible=true;}
-      // Solar films are excluded here since user explicitly wants no mirror
     }
     // Security — safety/shatter films
     if(g==='Sécurité'){
@@ -1135,7 +1142,11 @@ function buildRec(f){
     </div>
     ${cautionNote}
     <div class="specs">
+      ${f.vlt!=null?`<span class="spec">VLT ${f.vlt}%</span>`:''}
+      ${f.tser!=null?`<span class="spec">TSER ${f.tser}%</span>`:''}
+      ${f.uvr!=null?`<span class="spec">UV ${f.uvr}%</span>`:''}
       <span class="spec">$${f.c.toFixed(2)}/sf</span>
+      ${f.privacy===true?'<span class="spec">✓ Intimité</span>':''}
     </div>
     <button class="btn btn-primary" style="font-size:12px;padding:8px 14px;min-height:auto" onclick="addRecToQuote('${f.n}')">+ Ajouter au devis</button>
   `;
@@ -1286,13 +1297,28 @@ const CACHE_KEY='reflekt_quotes';
 function loadQuotes(){return JSON.parse(localStorage.getItem(CACHE_KEY)||'[]');}
 function setQuotesCache(arr){localStorage.setItem(CACHE_KEY,JSON.stringify(arr));}
 
-// Pull all quotes from Supabase and update local cache
+// Tombstones: IDs deleted locally, so a merge never resurrects them
+function loadTombstones(){return JSON.parse(localStorage.getItem('reflekt_deleted')||'[]');}
+function addTombstone(id){
+  const t=loadTombstones();
+  if(!t.includes(id)){t.push(id);localStorage.setItem('reflekt_deleted',JSON.stringify(t));}
+}
+function clearTombstone(id){
+  localStorage.setItem('reflekt_deleted',JSON.stringify(loadTombstones().filter(x=>x!==id)));
+}
+
+// Pull quotes from Supabase and MERGE with local cache.
+// SAFETY RULES:
+//  - Local data is NEVER blindly overwritten by cloud data.
+//  - Per quote: newest updatedAt wins.
+//  - Quotes that exist only locally are kept AND re-pushed to cloud.
+//  - Quotes deleted locally (tombstoned) are not resurrected from cloud.
 async function pullQuotes(){
   setSyncStatus('syncing');
   try{
     const{data,error}=await sb.from('quotes').select('*').order('updated_at',{ascending:false});
     if(error)throw error;
-    const mapped=data.map(r=>({
+    const cloud=data.map(r=>({
       id:r.id,
       clientName:r.client_name,
       clientAddr:r.client_addr||'',
@@ -1303,9 +1329,38 @@ async function pullQuotes(){
       assessment:r.assessment||{},
       updatedAt:r.updated_at,
     }));
-    setQuotesCache(mapped);
+    const local=loadQuotes();
+    const tombstones=new Set(loadTombstones());
+    const byId={};
+    // Cloud entries first (skip tombstoned ones — they were deleted here)
+    cloud.forEach(q=>{if(!tombstones.has(q.id))byId[q.id]=q;});
+    // Merge local: local wins if newer or cloud doesn't have it
+    const cloudIds=new Set(cloud.map(q=>q.id));
+    const needPush=[];
+    local.forEach(lq=>{
+      if(tombstones.has(lq.id))return;
+      const cq=byId[lq.id];
+      if(!cq){
+        // Local-only quote — keep it and schedule a re-push
+        byId[lq.id]=lq;
+        needPush.push(lq);
+      }else if(new Date(lq.updatedAt||0)>new Date(cq.updatedAt||0)){
+        // Local is newer — keep local version and re-push
+        byId[lq.id]=lq;
+        needPush.push(lq);
+      }
+    });
+    const merged=Object.values(byId).sort((a,b)=>new Date(b.updatedAt||0)-new Date(a.updatedAt||0));
+    setQuotesCache(merged);
     setSyncStatus('ok');
-    return mapped;
+    // Re-push anything the cloud is missing (fire and forget)
+    needPush.forEach(q=>pushQuote(q));
+    // Retry cloud deletions for tombstoned ids still present in cloud
+    loadTombstones().forEach(id=>{
+      if(cloudIds.has(id))deleteQuoteRemote(id).then(ok=>{if(ok)clearTombstone(id);});
+      else clearTombstone(id);
+    });
+    return merged;
   }catch(e){
     console.error('Pull failed',e);
     setSyncStatus('offline');
@@ -1545,10 +1600,14 @@ function loadQuote(id){
 function deleteQuote(id){
   if(!confirm('Supprimer ce devis définitivement ?'))return;
   setQuotesCache(loadQuotes().filter(x=>x.id!==id));
+  addTombstone(id);
   if(currentQuoteId===id){currentQuoteId=null;windows=[];renderQuote();}
   closeQuoteDetail();
   renderHistory();
-  deleteQuoteRemote(id).then(ok=>toast(ok?'Devis supprimé':'Supprimé localement'));
+  deleteQuoteRemote(id).then(ok=>{
+    if(ok)clearTombstone(id);
+    toast(ok?'Devis supprimé':'Supprimé localement (sera synchronisé)');
+  });
 }
 
 // ═══════════════════════════════════════════════════════════════
